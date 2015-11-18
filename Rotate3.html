@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel='stylesheet' type='text/css'>>
+        <title> Let's play a game...</title>
+        
+        <style type="text/css">
+            body {
+                background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
+                font-family: 'Cabin Sketch', cursive;
+                margin: 50px 100px 100px 100px;
+            }
+            
+            .text {
+                text-align: center;
+                color: black;
+            }
+            
+            h1 {
+                font-size: xx-large;
+            }
+            
+            p {
+                font-size: large;
+            }
+            
+            .image {
+                max-height: auto;
+                min-height: auto;
+                margin-top: 35px;
+                margin-left: 350px;
+            }
+    
+            #buttons {
+                margin: 0 auto;
+                width: 230px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="text">
+            <h1>Lets do a little game...</h1>
+            <p>Which way is up?</p>
+        </section>
+        
+        <section id="buttons"> 
+            <button id = "button" onClick="turnImage()">Rotate</button>
+            <button class = "up" onClick="Guess()">Right way up!</button>
+            <button class = "next" onClick="nextImage()">Next Image...</button>
+        </section>
+        
+        <section>
+            <img class="image" width= "400px" src="http://www.bocamuseum.org/clientuploads/EXHIBITION_IMAGES/EscherConvex_and_ConcaveLR.jpg">
+        </section>
+       
+        <script type="text/javascript" src="./myjava.js"></script>
+    </body>
+</html>
